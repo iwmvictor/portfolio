@@ -1,13 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/brand/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Iwmvictor - Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+   <!-- <script>
+      // Disable right-click context menu
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+
+      // Disable keyboard shortcuts for inspection (e.g., Ctrl+Shift+I, Ctrl+Shift+J, F12)
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.ctrlKey &&
+          event.shiftKey &&
+          (event.key === "I" || event.key === "J")
+        ) {
+          event.preventDefault();
+          notifyUser();
+        }
+      });
+
+      function notifyUser() {
+        // Create a notification element
+        var notification = document.createElement("div");
+        notification.textContent = "Victor disabled inspection😁";
+        notification.style.position = "fixed";
+        notification.style.top = "10px";
+        notification.style.left = "50%";
+        notification.style.transform = "translateX(-50%)";
+        notification.style.padding = "10px";
+        notification.style.background = "#0074f0";
+        notification.style.color = "#f7f7f7";
+        notification.style.borderRadius = "5px";
+        notification.style.zIndex = "9999";
+        notification.style.fontFamily = "Rubik, sans-serif";
+        notification.style.fontSize = "14px";
+
+        // Append the notification to the body
+        document.body.appendChild(notification);
+
+        // Remove the notification after 3 seconds
+        setTimeout(function () {
+          notification.parentNode.removeChild(notification);
+        }, 6000);
+      }
+    </script>  -->
   </body>
 </html>

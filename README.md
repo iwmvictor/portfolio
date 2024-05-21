@@ -1,4 +1,3 @@
-# portfolio
 Welcome to my portfolio website! I am a versatile software developer with a strong background in graphic design, web development, and UI/UX design. Explore my projects to see how I combine technical expertise with creative design to build user-friendly and visually appealing applications.
 
 # Hi 👋, I'm Iwmvictor
@@ -26,7 +25,12 @@ I'm dedicated to pushing the boundaries of technology through innovative solutio
 - **Figma**
 - **Git**
 
-I also have experience in graphic design using Canva.
+#### I also have experience in graphic design and as well ```UI&UX Design```.
+
+- *Adobe Illustrator*
+- *Adobe Express*
+- *Adobe XD*
+- *Canva*
 
 
 ## GitHub Stats
