@@ -63,9 +63,24 @@ function home() {
                 </div>
                 <div className="hero-social">
                   <p>
-                    Follow On - <a href="https://fb.com/iwmvictor/">Facebook</a>{" "}
-                    | <a href="https://instagram.com/iwmvictor/">Instagram</a> |{" "}
-                    <a href="https://linkedin.com/iwmvictor/">LinkedIn</a>
+                    Follow On -{" "}
+                    <a class="hover-effect" href="https://fb.com/iwmvictor/">
+                      Facebook
+                    </a>{" "}
+                    |{" "}
+                    <a
+                      class="hover-effect"
+                      href="https://instagram.com/iwmvictor/"
+                    >
+                      Instagram
+                    </a>{" "}
+                    |{" "}
+                    <a
+                      class="hover-effect"
+                      href="https://linkedin.com/iwmvictor/"
+                    >
+                      LinkedIn
+                    </a>
                   </p>
                 </div>
               </div>

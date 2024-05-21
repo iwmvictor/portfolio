@@ -47,11 +47,14 @@ html {
   scroll-behavior: smooth;
 }
 
+img{
+  pointer-events: none;
+}
+
 /* Global CSS */
 
 ul {
   list-style: none;
-  display: flex;
   align-items: center;
 }
 
@@ -148,9 +151,14 @@ h3 {
   gap: 20px;
 } */
 
-
-.grid-2-columns, .grid-3-columns, .grid-4-columns, .grid-5-columns, 
-.grid-6-columns, .grid-7-columns, .grid-8-columns, .grid-9-columns {
+.grid-2-columns,
+.grid-3-columns,
+.grid-4-columns,
+.grid-5-columns,
+.grid-6-columns,
+.grid-7-columns,
+.grid-8-columns,
+.grid-9-columns {
   display: grid;
   gap: 20px;
 }
@@ -411,8 +419,6 @@ h3 {
   }
 }
 
-
-
 h1 {
   font-size: var(--h1-size);
 }
@@ -428,4 +434,32 @@ h4 {
 p,
 a {
   font-size: var(--font-size-md);
+}
+
+.hover-effect {
+  display: inline-block;
+  color: #1877f2;
+  text-decoration: none;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+.hover-effect:hover {
+  animation: disappear-reappear 1s forwards;
+}
+
+@keyframes disappear-reappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+textarea {
+  resize: none;
 }
