@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import thumbnail from "./../assets/portfolio/thumbnail.jpeg";
+import thumbnail from "./../assets/portfolio/thumbnail.jpg";
 
 function Portfolio() {
   const [activeIndex, setActiveIndex] = useState(2); // Assuming the third item is active initially
