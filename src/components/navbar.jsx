@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./../style/style.scss";
 import logol from "./../assets/brand/light.png";
 import logod from "./../assets/brand/dark.png";
 

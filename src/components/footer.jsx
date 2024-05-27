@@ -1,9 +1,9 @@
 import React from "react";
-import "./../style/style.scss";
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
+  FaXTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
 
@@ -27,7 +27,7 @@ function Footer() {
                 <li>Web Development</li>
                 <li>Digital Marketing</li>
                 <li>App Development</li>
-                <li>Social Media Marketing</li>
+                <li>Social Media Management</li>
                 <li>Graphic Design</li>
                 <li>Webmaster & IT Support</li>
               </ul>
@@ -43,6 +43,11 @@ function Footer() {
                 <li>
                   <a href="#" className="instagram">
                     <FaInstagram />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="twitter">
+                    <FaXTwitter />
                   </a>
                 </li>
                 <li>
@@ -63,8 +68,15 @@ function Footer() {
               <input type="text" name="name" placeholder="Name" />
               <input type="email" name="email" placeholder="Email Address" />
               <select name="service">
-                <option value="">Choose Service</option>
-                {/* Add options here */}
+                <option value="" hidden>Choose Service</option>
+                <option value="">Web Design</option>
+                <option value="">Web Development</option>
+                <option value="">App Development</option>
+                <option value="">Graphic Design</option>
+                <option value="">IT Support</option>
+                <option value="">Webmaster</option>
+                <option value="">Digital Marketing</option>
+                <option value="">Social Media Management</option>
               </select>
               <textarea name="message" placeholder="Write Message"></textarea>
               <button type="submit" className="btn">
