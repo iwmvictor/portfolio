@@ -586,6 +586,180 @@ nav {
         }
       }
     }
+
+    .overview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 20px;
+
+      .abt-img {
+        img {
+          width: 100%;
+          height: auto;
+          border-bottom-right-radius: 10px;
+        }
+      }
+
+      .abt-content {
+        p {
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .online {
+      display: flex;
+      flex-direction: column;
+
+      .socialsmedia {
+        span {
+          display: block;
+          margin: 20px;
+          color: var(--accent-color);
+        }
+      }
+
+      .social-media {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px;
+
+        .icon {
+          background: var(--secondary-color);
+          transition: var(--transition);
+          color: var(--text-color);
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 21px;
+          padding: 10px;
+          display: flex;
+
+          &:hover {
+            color: var(--white-color);
+            border-radius: 5px;
+          }
+
+          &.github:hover {
+            background-color: #333;
+          }
+
+          &.mail:hover {
+            background-color: #d44638;
+          }
+
+          &.linkedin:hover {
+            background-color: #0077b5;
+          }
+
+          &.instagram:hover {
+            background-color: #e4405f;
+          }
+
+          &.facebook:hover {
+            background-color: #1877f2;
+          }
+
+          &.twitter:hover {
+            background-color: #1b1b1b;
+          }
+
+          &.pinterest:hover {
+            background-color: #bd081c;
+          }
+
+          &.youtube:hover {
+            background-color: #ff0000;
+          }
+
+          &.tiktok:hover {
+            background-color: #000000;
+          }
+
+          &.whatsapp:hover {
+            background-color: #25d366;
+          }
+
+          &.telegram:hover {
+            background-color: #0088cc;
+          }
+
+          &.buymeacoffee:hover {
+            background-color: #ffdd00;
+          }
+        }
+      }
+
+      .contribution-calendar {
+        width: 100%;
+        margin-top: 20px;
+        max-width: 760px;
+        padding: 20px;
+        background: var(--tertiary-color);
+
+        h4 {
+          margin-bottom: 15px;
+          color: var(--accent-color);
+        }
+
+        svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      // justify-content: center;
+
+      .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+
+        .icon {
+          padding: 15px;
+          border-radius: 50%;
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--secondary-color);
+          transition: var(--transition);
+
+          &:hover{
+            color: var(--accent-color);
+            background: var(--white-color);
+          }
+
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        span {
+          font-size: 0.8rem;
+          text-align: center;
+        }
+
+        &:hover .icon {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 
   .summary {

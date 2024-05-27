@@ -32,7 +32,7 @@ function Blog() {
   const [activeBlog, setActiveBlog] = useState(1);
 
   return (
-    <div className="blog">
+    <div className="blog" id="blog">
       <div className="container">
         <div className="blog-container">
           <div className="blog-header">

@@ -37,7 +37,7 @@ function home() {
 
   return (
     <>
-      <div className="home">
+      <div className="home" id="home">
         <section className="hero">
           <div className="hero-sec grid-2-columns">
             <div className="left">

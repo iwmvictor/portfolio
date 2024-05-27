@@ -28,7 +28,7 @@ function Portfolio() {
   ];
 
   return (
-    <div className="portfolio container">
+    <div className="portfolio container" id="portfolio">
       <div className="portfolio-container">
         <div className="portfolio-thumbnail">
           <img src={thumbnail} alt="Portfolio Thumbnail" />

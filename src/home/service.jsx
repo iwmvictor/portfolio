@@ -192,16 +192,16 @@ const Service = () => {
   };
 
   const skills = [
-    { name: "VS Code", percentage: "70%", icon: VSCode },
-    { name: "Figma", percentage: "90%", icon: Figma },
-    { name: "Illustrator", percentage: "60%", icon: Illustrator },
-    { name: "Canva", percentage: "85%", icon: Canva },
-    { name: "Wix", percentage: "80%", icon: Wix },
-    { name: "WordPress", percentage: "95%", icon: WordPress },
+    { name: "VS Code", percentage: "86%", icon: VSCode },
+    { name: "Figma", percentage: "92%", icon: Figma },
+    { name: "Illustrator", percentage: "86%", icon: Illustrator },
+    { name: "Canva", percentage: "98%", icon: Canva },
+    { name: "Wix", percentage: "87%", icon: Wix },
+    { name: "WordPress", percentage: "65%", icon: WordPress },
   ];
 
   return (
-    <div className="service">
+    <div className="service" id="services">
       <div className="service-container">
         <div className="service-content">
           <h2>Stand Out from Crowd Ignite Creativity</h2>

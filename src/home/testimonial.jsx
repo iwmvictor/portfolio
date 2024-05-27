@@ -100,7 +100,7 @@ function Testimonial() {
   };
 
   return (
-    <div className="testimonials container">
+    <div className="testimonials container" id="testimonial">
       <div className="testimonial-container">
         <h2>What they're saying about My Work!</h2>
         <Slider {...settings}>
