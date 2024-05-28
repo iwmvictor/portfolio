@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import heroImg from "./../assets/other/hero.png";
+import resume from "./../assets/portfolio/resume.pdf";
+import { FaTimes } from "react-icons/fa";
 
 function home() {
   const [services, setServices] = useState([
@@ -15,6 +17,14 @@ function home() {
   ]);
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
   const [currentService, setCurrentService] = useState("");
+
+  const [openCV, setOpenCV] = useState(false);
+  const handleOpenCV = () => {
+    setOpenCV(true);
+  };
+  const handleCloseCV = () => {
+    setOpenCV(false);
+  };
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
@@ -55,19 +65,28 @@ function home() {
                   expertise, and strategic insight to every project I undertake.
                 </p>
                 <div className="hero-action">
-                  <a className="btn" title="Preview My Resume">
-                    View CV
+                  <a
+                    className="btn"
+                    title="Preview My Resume"
+                    onClick={handleOpenCV}
+                  >
+                    Preview My Resume
                   </a>
                 </div>
                 <div className="hero-social">
                   <p>
                     Follow On -{" "}
-                    <a class="hover-effect" href="https://fb.com/iwmvictor/">
+                    <a
+                      class="hover-effect"
+                      target="_blank"
+                      href="https://fb.com/iwmvictor/"
+                    >
                       Facebook
                     </a>{" "}
                     |{" "}
                     <a
                       class="hover-effect"
+                      target="_blank"
                       href="https://instagram.com/iwmvictor/"
                     >
                       Instagram
@@ -75,7 +94,8 @@ function home() {
                     |{" "}
                     <a
                       class="hover-effect"
-                      href="https://linkedin.com/iwmvictor/"
+                      target="_blank"
+                      href="https://linkedin.com/in/iwmvictor/"
                     >
                       LinkedIn
                     </a>
@@ -91,6 +111,26 @@ function home() {
           </div>
         </section>
       </div>
+
+      {openCV && (
+        <div className="cv-modal">
+          <div className="overlay">
+            <div className="resume">
+              <div className="preview">
+                <iframe
+                  title="Iwmvictor's CV"
+                  src={resume}
+                  width="100%"
+                  height="580px"
+                ></iframe>
+                <button onClick={handleCloseCV}>
+                  <FaTimes />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

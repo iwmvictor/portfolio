@@ -204,7 +204,13 @@ const Service = () => {
     <div className="service" id="services">
       <div className="service-container">
         <div className="service-content">
-          <h2>Stand Out from Crowd Ignite Creativity</h2>
+          <div className="sec-title">
+            <span>My Services</span>
+            <h2>
+              Stand Out from Crowd <br />
+              Ignite Creativity
+            </h2>
+          </div>
           <div className="services container">
             {services.map((service, index) => (
               <div

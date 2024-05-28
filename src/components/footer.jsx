@@ -36,27 +36,27 @@ function Footer() {
               <h4>Follow On</h4>
               <ul>
                 <li>
-                  <a href="#" className="facebook">
+                  <a href="https://facebook.com/iwmvictor" className="facebook">
                     <FaFacebookF />
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="instagram">
+                  <a href="https://instagram.com/iwmvictor" className="instagram">
                     <FaInstagram />
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="twitter">
+                  <a href="https://twitter.com/iwmvictor" className="twitter">
                     <FaXTwitter />
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="whatsapp">
+                  <a href="https://wa.link/63ne85" className="whatsapp">
                     <FaWhatsapp />
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="linkedin">
+                  <a href="https://linkedin.com/in/iwmvictor" className="linkedin">
                     <FaLinkedin />
                   </a>
                 </li>
@@ -68,7 +68,9 @@ function Footer() {
               <input type="text" name="name" placeholder="Name" />
               <input type="email" name="email" placeholder="Email Address" />
               <select name="service">
-                <option value="" hidden>Choose Service</option>
+                <option value="" hidden>
+                  Choose Service
+                </option>
                 <option value="">Web Design</option>
                 <option value="">Web Development</option>
                 <option value="">App Development</option>
@@ -87,7 +89,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {currentYear} All Right Reserved by Iwmvictor</p>
+        <p>&copy; {currentYear} Iwmvictor. All Rights Reserved</p>
       </div>
     </footer>
   );

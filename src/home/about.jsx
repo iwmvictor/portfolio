@@ -260,15 +260,15 @@ function About() {
           </div>
           <div className="summary">
             <div className="summary-item">
-              <h2>1.5k</h2>
+              <h2>312+</h2>
               <p>Happy Clients</p>
             </div>
             <div className="summary-item">
-              <h2>50+</h2>
+              <h2>36+</h2>
               <p>Projects Completed</p>
             </div>
             <div className="summary-item">
-              <h2>15+</h2>
+              <h2>4+</h2>
               <p>Years of Experience</p>
             </div>
           </div>

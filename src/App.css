@@ -446,6 +446,22 @@ a {
   font-size: var(--font-size-md);
 }
 
+.sec-title{
+  text-align: center;
+}
+
+.sec-title span{
+  color: var(--accent-color);
+  padding: 10px;
+  display: block;
+  font-size: 21px;
+}
+
+.service ::selection{
+  background: var(--primary-color);
+  color: var(--accent-color);
+}
+
 .hover-effect {
   display: inline-block;
   color: #1877f2;

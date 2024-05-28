@@ -739,7 +739,7 @@ nav {
           background-color: var(--secondary-color);
           transition: var(--transition);
 
-          &:hover{
+          &:hover {
             color: var(--accent-color);
             background: var(--white-color);
           }
@@ -1439,5 +1439,54 @@ nav {
         }
       }
     }
+  }
+}
+
+// RESUME PREVIEW
+.resume {
+  width: 90%;
+  margin: auto;
+  max-width: 800px;
+
+  .preview{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    button{
+      top: 0;
+      right: 0;
+      display: flex;
+      font-size: 21px;
+      padding: 18px 15px;
+      position: absolute;
+      color: var(--primary-color);
+      transition: var(--transition);
+      background: var(--white-color);
+      border-bottom-left-radius: 10px;
+
+      &:hover{
+        color: var(--white-color);
+        background: var(--tertiary-color);
+      }
+    }
+  }
+}
+
+// MODAL
+.cv-modal {
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  background: rgba(024, 024, 024, 0.6);
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
