@@ -8,8 +8,8 @@ import user5 from "./../assets/testimony/user4.jpg";
 import user6 from "./../assets/testimony/user2.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaRegStar } from "react-icons/fa";
-import { FaStar, FaStarHalfStroke } from "react-icons/fa6";
+import { FaRegStar, FaStar } from "react-icons/fa";
+import { FaStarHalfStroke } from "react-icons/fa6";
 
 const testimonials = [
   {
@@ -97,6 +97,15 @@ function Testimonial() {
     centerMode: true,
     centerPadding: "0",
     beforeChange: (current, next) => setActiveSlide(next),
+    responsive: [
+      {
+        breakpoint: 825,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
   };
 
   return (

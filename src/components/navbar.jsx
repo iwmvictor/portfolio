@@ -18,8 +18,12 @@ function Navbar() {
     );
   };
 
-  const [scrolled, setScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
+  const [scrolled, setScrolled] = useState(false);
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 50) {
@@ -70,9 +74,52 @@ function Navbar() {
             </ul>
           </div>
           <div className="navbtn">
-            <a onClick={openWhatsApp} className="contact-btn btn" title="Lemme do your job">
+            <a
+              onClick={openWhatsApp}
+              className="contact-btn btn"
+              title="Lemme do your job"
+            >
               contact me
             </a>
+          </div>
+
+          <div className="nav-menu">
+            <div
+              className={`hamburger ${showMenu ? "active" : ""}`}
+              onClick={toggleMenu}
+            >
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
+            </div>
+            {showMenu && (
+              <ul className="menu-list">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
+                <li>
+                  <Link to="/projects">Projects</Link>
+                </li>
+                <li>
+                  <Link to="/testimonial">Testimonial</Link>
+                </li>
+                <li>
+                  <Link to="/skills">Skills</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
       </div>

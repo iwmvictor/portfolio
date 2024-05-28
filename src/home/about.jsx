@@ -123,7 +123,7 @@ function About() {
           </div>
           <div className="content">
             <h5>About Me</h5>
-            <h2>Why you should hire me for your next project?</h2>
+            <h1>Why you should hire me for your next project?</h1>
             {activeTab === "experience" && (
               <div className="overview">
                 <div className="abt-img">

@@ -474,6 +474,19 @@ a {
   animation: disappear-reappear 1s forwards;
 }
 
+select {
+  padding: 10px;
+  border-radius: 0;
+}
+
+select option {
+  background: var(--primary-color);
+  color: var(--white-color);
+  display: block;
+  padding: 10px;
+  border-radius: 0;
+}
+
 @keyframes disappear-reappear {
   0% {
     opacity: 1;

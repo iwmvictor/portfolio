@@ -16,9 +16,6 @@ function Subscribe() {
               <button className="btn">Subscribe Now</button>
             </div>
           </div>
-          <div className="subscribe-image">
-            <img src={bookImage} alt="Download Now" />
-          </div>
         </div>
       </div>
     </div>
